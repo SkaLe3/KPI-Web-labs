@@ -1,2 +1,6 @@
-# KPI-Web-labs
-Web-design laboratory works
+# Лабораторна робота №1: Розробка статичного інтерфейсу Web-додатка
+## Завдання
+Розробити статичні Web-сторінки додатку та перевірити коректне їх відображення на екранах різного розміру.
+## Developer
+Парієнко Віктор Володимирович КВ-11
+## [Звіт](https://docs.google.com/document/d/1IGKwMHMO-pMZjqCXPIPoKToZo0HCuTLPzgtZLVqY914/edit)
