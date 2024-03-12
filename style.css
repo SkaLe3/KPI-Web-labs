@@ -97,6 +97,5 @@ p,  h5, h6, a, span {
 .vertical-line {
     border-left: 1px solid #3a383a;
     height: 40px; 
-    margin-left: 900px;
-    margin-right: 10px;
+    margin-top: -25px;
 }
