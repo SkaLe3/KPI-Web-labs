@@ -1,0 +1,102 @@
+img.logo {
+    height: 50px;
+    width:auto
+}
+img.big-logo {
+    height: 70px;
+    width:auto
+}
+.ssc-btn-outline-accent {
+    border-color: #ff6cab; 
+    color: #ff6cab
+}
+.ssc-btn-outline-accent:hover {
+    border-color: #ff6cab; 
+    color: #ff6cab
+}
+.ssc-btn-outline-success{
+    border-color: #49d262; 
+    color: #49d262
+}
+.ssc-btn-outline-success:hover {
+    border-color: #49d262; 
+    color: #49d262
+}
+
+.ssc-btn-primary-success {
+    background-color: #1a141e
+}
+.ssc-btn-primary-success:hover {
+    background-color: #203624
+}
+
+.ssc-btn-accent{
+    background-color: #ff6cab;
+    color: white;
+}
+.ssc-btn-accent:hover{
+    background-color: #fe83b9;
+    color: white;
+}
+.ssc-btn-secondary{
+    background-color: #3a383a;
+}
+.ssc-btn-secondary:hover{
+    background-color: #4e4d4e;
+}
+
+.ssc-bg-primary {
+    background-color: #251e29
+}
+.ssc-bg-secondary {
+    background-color: #1a141e
+}
+
+
+
+h1, h2, h3, h4 ul {
+    font-family: 'Zen Dots';
+}
+
+body {
+    font-family: 'Zen Dots';
+    background-color: #1a141e;
+}
+
+
+p,  h5, h6, a, span {
+    font-family: 'Fira Sans Extra Condensed';
+}
+
+.font-fira{
+    font-family: 'Fira Sans Extra Condensed';
+}
+.font-zen-dots{
+    font-family: 'Zen Dots';
+}
+.rounded-image {
+    border-radius: 10px; 
+}
+
+.overlay {
+    background: url('assets/overlay.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.color-divider {
+    height: 6px;
+    background-image: linear-gradient(to right, #49d262, #d9ff00, #ff6cab);
+    border: none;
+}
+
+.vertical-line {
+    border-left: 1px solid #3a383a;
+    height: 40px; 
+    margin-left: 900px;
+    margin-right: 10px;
+}
