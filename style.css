@@ -44,6 +44,12 @@ img.big-logo {
 .ssc-btn-secondary:hover{
     background-color: #4e4d4e;
 }
+.ssc-btn-primary{
+    background-color: #251e29;
+}
+.ssc-btn-primary:hover{
+    background-color: #3b3241;
+}
 
 .ssc-bg-primary {
     background-color: #251e29
@@ -51,7 +57,9 @@ img.big-logo {
 .ssc-bg-secondary {
     background-color: #1a141e
 }
-
+.ssc-bg-secondary-tr{
+    background-color: #1a141e9d;
+}
 
 
 h1, h2, h3, h4 ul {
@@ -77,6 +85,11 @@ p,  h5, h6, a, span {
 .rounded-image {
     border-radius: 10px; 
 }
+.flag-icon {
+    height: 20px;
+    width: auto;
+    border-radius: 5px;
+}
 
 .overlay {
     background: url('assets/overlay.png') no-repeat center center/cover;
@@ -97,4 +110,53 @@ p,  h5, h6, a, span {
 .vertical-line {
     border-left: 1px solid #3a383a;
     height: 40px; 
+}
+.ssc-border-right {
+    border-right: 1px solid #3a383a;
+}
+.ssc-border-left {
+    border-left: 1px solid #3a383a;
+}
+.ssc-border-bottom{
+    border-bottom: 1px solid #3a383a;
+}
+
+.rounded-circle-img-sm {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+    margin: 0 auto; 
+}
+.rounded-circle-img-lg {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px; 
+    height: 120px; 
+    margin: 0 auto; 
+}
+.profile-banner-overlay {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: left;
+    color: white;
+}
+.profile-banner-icon {
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    text-align: left;
+    color: white;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: left;
+    margin-left: -11px;
+}
+
+.cam-icon
+{
+    margin-top: -34px;
 }
