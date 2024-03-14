@@ -61,8 +61,8 @@ img.big-logo {
     background-color: #1a141e9d;
 }
 
-@font-face { font-family: Play; src: url('fonts/Play-Bold.ttf'); } 
-@font-face { font-family: Play; font-weight: bold; src: url('Play-Regular.ttf');}
+@font-face { font-family: Play; src: url('assets/fonts/Play-Bold.ttf'); } 
+@font-face { font-family: Play; font-weight: bold; src: url('assets/fonts/Play-Regular.ttf');}
 body {
     font-family: 'Play', sans-serif;
     background-color: #1a141e;
