@@ -1,5 +1,5 @@
 img.logo {
-    height: 50px;
+    height: 40px;
     width:auto
 }
 img.big-logo {
@@ -61,11 +61,52 @@ img.big-logo {
     background-color: #1a141e9d;
 }
 
-@font-face { font-family: Play; src: url('assets/fonts/Play-Bold.ttf'); } 
-@font-face { font-family: Play; font-weight: bold; src: url('assets/fonts/Play-Regular.ttf');}
+@font-face { font-family: Play; src: url('assets/fonts/Play-Regular.ttf'); } 
+@font-face { font-family: Play; font-weight: bold; src: url('assets/fonts/Play-Bold.ttf');}
 body {
-    font-family: 'Play', sans-serif;
+    font-family: Play, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
     background-color: #1a141e;
+}
+.font-italic {
+    font-style: italic;
+}
+
+.font-weight-bold {
+    font-weight:bold;
+}
+
+.font-xsm{
+    font-size:12px;
+}
+.font-sm{
+    font-size: 14px;
+}
+.font-md{
+    font-size: 16px;
+}
+.font-lg {
+    font-size: 20px;
+}
+.font-huge {
+    font-size: 46px;
+}
+
+.font-heading {
+    font-family: Play, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.font-regular {
+    font-family: Play, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 
@@ -96,7 +137,7 @@ body {
 
 .vertical-line {
     border-left: 1px solid #3a383a;
-    height: 40px; 
+    height: 50px; 
 }
 .ssc-border-right {
     border-right: 1px solid #3a383a;
@@ -148,23 +189,3 @@ body {
     margin-top: -34px;
 }
 
-.font-italic {
-    font-style: italic;
-}
-
-.font-weight-bold {
-    font-weight:bold;
-}
-
-.font-sm{
-    font-size: smaller;
-}
-
-.font-heading {
-    font-family: Play, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
