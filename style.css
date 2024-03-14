@@ -6,6 +6,10 @@ img.big-logo {
     height: 70px;
     width:auto
 }
+img.logo-xxl {
+    height: 150px;
+    width:auto;
+}
 .ssc-btn-outline-accent {
     border-color: #ff6cab; 
     color: #ff6cab
