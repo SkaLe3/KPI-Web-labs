@@ -62,26 +62,12 @@ img.big-logo {
 }
 
 
-h1, h2, h3, h4 ul {
-    font-family: 'Zen Dots';
-}
-
 body {
-    font-family: 'Zen Dots';
+    font-family: 'Play';
     background-color: #1a141e;
 }
 
 
-p,  h5, h6, a, span {
-    font-family: 'Fira Sans Extra Condensed';
-}
-
-.font-fira{
-    font-family: 'Fira Sans Extra Condensed';
-}
-.font-zen-dots{
-    font-family: 'Zen Dots';
-}
 .rounded-image {
     border-radius: 10px; 
 }
@@ -159,4 +145,16 @@ p,  h5, h6, a, span {
 .cam-icon
 {
     margin-top: -34px;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-weight-bold {
+    font-weight:600;
+}
+
+.font-sm{
+    font-size: smaller;
 }
