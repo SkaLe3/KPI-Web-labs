@@ -116,6 +116,9 @@ body {
     letter-spacing: 0.02em;
     line-height: 20px;
 }
+.font-low {
+    line-height: 16px;
+}
 
 
 .rounded-image {
@@ -145,6 +148,11 @@ body {
 .common-divider {
     height: 1px;
     background-color: #ff6cab;
+    border: none;
+}
+.default-divider {
+    height: 1px;
+    background-color: #878787;
     border: none;
 }
 
@@ -224,6 +232,64 @@ body {
     color:#d5d5d5
 }
 
+.nav-link-login {
+    color: #e7e7e7;
+}
+.nav-link-login:hover{
+    color: #e7e7e7;
+}
+
 .margin-profile-nav {
     margin-top: -22px;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-bottom:  16px;
+  }
+
+.ssc-input {
+    color: #878787; /* Change to the color you desire */
+    border: none; /* Remove the border */
+    background-color: #3a383a; /* Default background color */
+    transition: border-color 1s /* Add transition for smooth effect */
+}
+.ssc-input:focus {
+    color: #878787;
+    outline: 2px solid #ff6cab;
+    outline-color: #ff6cab;
+    background-color: #1a141e; /* Default background color */
+}
+.ssc-input::placeholder {
+    border: none; /* Remove the border */
+    color: #878787; /* Default background color */
+}
+
+.ssc-checkbox {
+    outline: 1px solid #ffffff;
+}
+.ssc-checkbox:checked {
+    background-color: #ff6cab;
+    border-color: #1a141e;
+    color: #ff0000;
+    border: none;
+    outline: none;
+}
+.ssc-checkbox:focus {
+    background-color: #ff6cab;
+    border-color: #1a141e;
+    color: #ff0000;
+    border: none;
+    outline: 3px solid rgb(97, 67, 80)
+
+}
+
+.text-light-grey {
+    color: #dbdbdb;
 }
