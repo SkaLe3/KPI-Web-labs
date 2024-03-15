@@ -38,13 +38,53 @@
           <a href="about.html" class="nav-link font-heading">ABOUT</a>
         </li>
       </ul>
+      <ul class="navbar-nav d-md-flex">
+        <li class="nav-item d-none d-md-inline me-3">
+          <div class="vertical-line"></div>
+        </li>
+        <li class="nav-item d-md-none">
+          <a href="register.html" class="nav-link font-heading ">CREATE ACCOUNT</a>
+        </li>
+        <li class="nav-item d-none d-md-inline me-3 mt-2" >
+          <a href="register.html" class="btn ssc-btn-accent font-heading py-2 px-4">CREATE ACCOUNT</a>
+        </li>
+        <li class="nav-item d-md-none">
+          <a href="login.html" class="nav-link font-heading">LOGIN</a>
+        </li>
+        <li class="nav-item me-5 d-none d-md-inline mt-2" >
+          <a href="login.html" class="btn ssc-btn-secondary text-white font-heading py-2 px-4">LOGIN</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
 <!-- Main Content -->
-<section>
-
+<section class="py-5">
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="registration-form ssc-bg-primary">
+          <h5 class="text-center text-white font-weight-bold mb-3">Create account</h5>
+          <form>
+            <div class="form-group">
+              <label for="email" class="text-white font-special font-weight-bold">Email adress</label>
+              <input type="email" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="text-white font-special font-weight-bold">Password</label>
+              <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="password" placeholder="Enter password">
+            </div>
+              <button type="button" class="btn ssc-btn-accent w-100 font-heading mt-3">create account</button>
+              <hr class="mx-4 my-3 default-divider">
+              <p class="font-special text-light-grey text-center font-xsm">Don't have an account?</p>
+              <a href="register.html" class="nav-link nav-link-login mt-3 font-heading text-light-grey text-center">CREATE ACCOUNT</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
@@ -59,11 +99,12 @@
           <a class="nav-link text-white" href="index.html">Home</a>
           <a class="nav-link text-white" href="about.html">About</a>
           <a class="nav-link text-white" href="register.html">Create Account</a>
+          <div class="d-md-none my-3"></div>
         </div>
       </div>
       <div class="col-md-2 d-flex flex-column">
         <h5 class="font-heading">About Us</h5>
-
+        <div class="d-md-none my-3"></div>
         <div class=" mt-auto font-xsm d-md-inline d-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
         
       </div>
@@ -73,6 +114,7 @@
           <a class="nav-link text-white" href="#">Facebook</a>
           <a class="nav-link text-white" href="#">Twitter</a>
           <a class="nav-link text-white" href="#">Instagram</a>
+          <div class="d-md-none my-3"></div>
         </div>
       </div>
     </div>

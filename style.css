@@ -180,17 +180,24 @@ body {
 .rounded-circle-img-lg {
     border-radius: 50%;
     overflow: hidden;
-    width: 120px; 
     height: 120px; 
+    width: auto; 
     margin: 0 auto; 
 }
-.profile-banner-overlay {
-    position: absolute;
-    top: 100px;
-    left: 40px;
-    text-align: left;
-    color: white;
+
+.banner {
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: flex-end;
+    padding: 16px;
+    background-color: #050505;
+    background-image: url('assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
 .profile-banner-icon {
     position: absolute;
     top: 46px;
@@ -257,7 +264,7 @@ body {
 .ssc-input {
     color: #878787; /* Change to the color you desire */
     border: none; /* Remove the border */
-    background-color: #3a383a; /* Default background color */
+    background-color: #2b2a2b; /* Default background color */
     transition: border-color 1s /* Add transition for smooth effect */
 }
 .ssc-input:focus {
@@ -282,7 +289,7 @@ body {
     outline: none;
 }
 .ssc-checkbox:focus {
-    background-color: #ff6cab;
+    background-color: #2d2234;
     border-color: #1a141e;
     color: #ff0000;
     border: none;

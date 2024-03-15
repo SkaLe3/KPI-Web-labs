@@ -62,7 +62,22 @@
 <section id="home" class="scc-bg-secondary">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-4 text-white d-flex justify-content-end">
+      <div class="col-md-4 text-white  justify-content-end d-none d-md-flex">
+        <div class="me-5 mt-5">
+          <h3 class="font-weight-bold"> My Profile</h3>
+          <nav>
+            <div class="nav d-flex flex-column" id="nav-tab-profile" role="tablist">
+              <button class="font-subheading  text-start px-0 nav-link  nav-link-profile active" id="nav-account-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-account" aria-selected="true">MY ACCOUNT</button>
+              <button class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-reviews-tab"
+              data-bs-toggle="tab" data-bs-target="#nav-reviews" aria-selected="false">MY REVIEWS</button>
+              <a class="font-subheading  text-start px-0 nav-link nav-link-profile" id="nav-signout-tab"
+              href="index.html" >SIGN OUT</a>
+            </div>
+          </nav>  
+        </div>
+      </div>
+      <div class="col-md-4 text-white d-flex justify-content-start d-md-none">
         <div class="me-5 mt-5">
           <h3 class="font-weight-bold"> My Profile</h3>
           <nav>
@@ -76,29 +91,30 @@
             </div>
           </nav>          
         </div>
-
       </div>
-      <div class="col-8 ">
+      <div class="col-md-8 ">
         <div class="ssc-bg-primary ssc-border-left position-relative">
-          <img class="img-fluid " src="assets/banner.png">
-          <div class="profile-banner-overlay ">
-            <div class="row">
-              <div class="col-4">
-                  <img class="rounded-circle-img-lg" src="assets/pp.jpg">
-                  <button class="btn ssc-btn-primary p-1 cam-icon text-white"><i class="fa fa-camera"></i></button>
-              </div>
-              <div class="col-8 ">
-                <div class="ssc-bg-secondary-tr ms-0 ">
-                  <h5 class="text-white mt-2 ms-2 pt-4 font-special font-weight-bold">SkaLe</h5>
-                  <div class="container pb-2">
-                    <div class="image-text-container">
-                      <img class="flag-icon ms-2" src="assets/flags/ua.svg">
-                      <p class="ms-2 font-weight-bold">Member since Apr 4, 2019</p>
+          <div class="container-fluid p-0">
+            <div class="banner">
+                <div class="row mt-5 mb-4 ms-2">
+                  <div class="col-md-4">
+                    <img class="rounded-circle-img-lg" src="assets/pp.jpg">
+                    <button class="btn ssc-btn-primary p-1 cam-icon text-white"><i class="fa fa-camera"></i></button>
+                  </div>
+                  <div class="col-md-8 ">
+                    <div class="ssc-bg-secondary-tr ms-0 ">
+                      <h5 class="text-white mt-2 ms-2 pt-4 font-special font-weight-bold">SkaLe</h5>
+                      <div class="container pb-2">
+                        <div class="image-text-container">
+                          <img class="flag-icon ms-2" src="assets/flags/ua.svg">
+                          <p class="ms-2 font-weight-bold text-white">Member since Apr 4, 2019</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
+              <!--<img class="img d-flex" height="240" src="assets/banner.png">-->
           </div>
           <div class="profile-banner-icon">
             <button class="btn ssc-btn-primary p-1 cam-icon text-white"><i class="fa fa-camera"></i></button>
@@ -120,47 +136,147 @@
                 <div class="tab-content" id="nav-tabcontent2">
                   <div class="tab-pane fade show active p-3" id="nav-data" role="tabpanel"
                   aria-labelledby="nav-data-tab">
-                    <h6 class="text-white font-weight-bold font-sm">USERNAME</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="Username" 
-                      aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6 class="text-white font-weight-bold font-sm">EMAIL</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="Email" 
-                      aria-label="Email" aria-describedby="basic-addon1">
-                    </div>
-                    <h6 class="text-white font-weight-bold font-sm">GENDER</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="Gender" 
-                      aria-label="Gender" aria-describedby="basic-addon1">
-                    </div>
-                    <h6 class="text-white font-weight-bold font-sm">Date of Birth</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="Date" 
-                      aria-label="Date" aria-describedby="basic-addon1">
-                    </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="username" class="text-white font-special font-weight-bold">Username</label>
+                        <input type="text" value="SkaLe" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="username" placeholder="Enter username">
+                      </div>
+                      <div class="form-group">
+                        <label for="email" class="text-white font-special font-weight-bold">Email adress</label>
+                        <input type="email" value="39SkaLe@gmail.com" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="email" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="dob" class="text-white font-special font-weight-bold">Date Of Birth</label>
+                        <div class="container-fluid p-0">
+                          <div class="row">
+                            <div class="col-4 pe-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="day">
+                                <option >dd</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22" selected>22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                              </select>
+                            </div>
+                            <div class="col-4 px-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white"  id="month">
+                                <option selected>mm</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July" selected>July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                              </select>
+                            </div>
+                            <div class="col-4 ps-1">
+                              <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white"  id="year">
+                                <option selected>yyyy</option>
+                                <option value="2024">2008</option>
+                                <option value="2024">2007</option>
+                                <option value="2024">2006</option>
+                                <option value="2024">2005</option>
+                                <option value="2024" selected>2004</option>
+                                <option value="2024">2003</option>
+                                <option value="2024">2002</option>
+                                <option value="2024">2001</option>
+                                <option value="2024">2000</option>
+                                <option value="2024">1999</option>
+                                <option value="2024">1998</option>
+                                <option value="2024">1997</option>
+                                <option value="2024">1996</option>
+                                <option value="2024">1995</option>
+                                <option value="2024">1994</option>
+                                <option value="2024">1993</option>
+                                <option value="2024">1992</option>
+                                <option value="2024">1991</option>
+                                <option value="2024">1990</option>
+                                <option value="2024">1989</option>
+                                <option value="2024">1988</option>
+                                <option value="2024">1987</option>
+                                <option value="2024">1986</option>
+                                <option value="2024">1985</option>
+                                <option value="2024">1984</option>
+                                <option value="2024">1983</option>
+                                <option value="2024">1982</option>
+                                <option value="2024">1981</option>
+                                <option value="2024">1980</option>
+                                <option value="2024">1979</option>
+                                <option value="2024">1978</option>
+                                <option value="2024">1977</option>
+                                <option value="2024">1976</option>
+                                <option value="2024">1975</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                      <div class="form-group">
+                        <label for="gender" class="text-white font-special font-weight-bold">Gender</label>
+                        <select class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="Select Gender">
+                          <option >Select Gender</option>
+                          <option value="Male" selected>Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Deer">Deer</option>
+                        </select>
+                      </div>
+                    </form>
+
                     <button class="btn font-heading ssc-btn-accent p-2">save changes</button>
                   </div>
                 </div>
                 <div class="tab-content" id="nav-tabcontent2">
                   <div class="tab-pane fade p-3" id="nav-password" role="tabpanel"
                   aria-labelledby="nav-password-tab">
-                    <h6 class="text-white font-weight-bold font-sm">Current Password</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="current password" 
-                      aria-label="currentpassword" aria-describedby="basic-addon1">
-                    </div>
-                    <h6 class="text-white font-weight-bold font-sm">New Password</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="new password" 
-                      aria-label="newpassword" aria-describedby="basic-addon1">
-                    </div>
-                    <h6 class="text-white font-weight-bold font-sm">Confirm new Password</h6>
-                    <div class="input-group mb-3">
-                      <input class="" type="text" class="form-control" placeholder="confirm new password" 
-                      aria-label="confirmnewpassword" aria-describedby="basic-addon1">
-                    </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">Current Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="password" placeholder="Enter password">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">New Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="newpassword" placeholder="Enter password">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="text-white font-special font-weight-bold">Confirm New Password</label>
+                        <input type="password" class="form-control mb-2 ssc-input border-0 font-sm py-2 text-white" id="confirmnewpassword" placeholder="Enter password">
+                      </div>
+                    </form>
+                    
                     <button class="btn font-heading ssc-btn-accent p-2">update password</button>
                   </div>
                 </div>
@@ -194,11 +310,12 @@
           <a class="nav-link text-white" href="index.html">Home</a>
           <a class="nav-link text-white" href="about.html">About</a>
           <a class="nav-link text-white" href="register.html">Create Account</a>
+          <div class="d-md-none my-3"></div>
         </div>
       </div>
       <div class="col-md-2 d-flex flex-column">
         <h5 class="font-heading">About Us</h5>
-
+        <div class="d-md-none my-3"></div>
         <div class=" mt-auto font-xsm d-md-inline d-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
         
       </div>
@@ -208,6 +325,7 @@
           <a class="nav-link text-white" href="#">Facebook</a>
           <a class="nav-link text-white" href="#">Twitter</a>
           <a class="nav-link text-white" href="#">Instagram</a>
+          <div class="d-md-none my-3"></div>
         </div>
       </div>
     </div>
