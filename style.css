@@ -300,3 +300,68 @@ body {
 .text-light-grey {
     color: #dbdbdb;
 }
+
+.browse-banner {
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+    background-image: url('assets/browse_banner.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+
+}
+
+.game-card {
+    background: linear-gradient(to left, rgb(28, 137, 147), #b168b8); /* Fading background */
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    color:#ffffff;
+    height: 300;
+    width: 200;
+
+
+}
+img.game-card {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+}
+
+.score-good {
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    background-color: #4adc78; /* Adjust background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #2e2e2e;
+    font-weight: bolder;
+}
+.score-mid {
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    background-color: #dcd74a; /* Adjust background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #2e2e2e;
+    font-weight: bolder;
+}
+.score-bad {
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    background-color: #dc4a67; /* Adjust background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #2e2e2e;
+    font-weight: bolder;
+}
+
+.card-center {
+    align-items: center;
+}
