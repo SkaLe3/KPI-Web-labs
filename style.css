@@ -16,7 +16,8 @@ img.logo-xxl {
 }
 .ssc-btn-outline-accent:hover {
     border-color: #ff6cab; 
-    color: #ff6cab
+    color: #ff6cab;
+    background-color: #ff6cac14;
 }
 .ssc-btn-outline-success{
     border-color: #49d262; 
@@ -262,20 +263,20 @@ body {
   }
 
 .ssc-input {
-    color: #878787; /* Change to the color you desire */
-    border: none; /* Remove the border */
-    background-color: #2b2a2b; /* Default background color */
-    transition: border-color 1s /* Add transition for smooth effect */
+    color: #878787; 
+    border: none; 
+    background-color: #2b2a2b; 
+    transition: border-color 1s;
 }
 .ssc-input:focus {
     color: #878787;
     outline: 2px solid #ff6cab;
     outline-color: #ff6cab;
-    background-color: #1a141e; /* Default background color */
+    background-color: #1a141e; 
 }
 .ssc-input::placeholder {
-    border: none; /* Remove the border */
-    color: #878787; /* Default background color */
+    border: none;
+    color: #878787; 
 }
 
 .ssc-checkbox {
@@ -312,7 +313,7 @@ body {
 }
 
 .game-card {
-    background: linear-gradient(to left, rgb(28, 137, 147), #b168b8); /* Fading background */
+    background: linear-gradient(to left, rgb(28, 137, 147), #b168b8); 
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
@@ -329,9 +330,9 @@ img.game-card {
 }
 
 .score-good {
-    width: 20px; /* Adjust the width and height as needed */
+    width: 20px; 
     height: 20px;
-    background-color: #4adc78; /* Adjust background color */
+    background-color: #4adc78; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,9 +341,9 @@ img.game-card {
     font-weight: bolder;
 }
 .score-mid {
-    width: 20px; /* Adjust the width and height as needed */
+    width: 20px; 
     height: 20px;
-    background-color: #dcd74a; /* Adjust background color */
+    background-color: #dcd74a; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,9 +352,9 @@ img.game-card {
     font-weight: bolder;
 }
 .score-bad {
-    width: 20px; /* Adjust the width and height as needed */
+    width: 20px; 
     height: 20px;
-    background-color: #dc4a67; /* Adjust background color */
+    background-color: #dc4a67; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,4 +365,13 @@ img.game-card {
 
 .card-center {
     align-items: center;
+}
+
+.game-media {
+    border-radius: 10px;
+}
+.game-container {
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-left: 0px;
 }
