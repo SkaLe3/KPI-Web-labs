@@ -81,6 +81,9 @@ body {
 .font-weight-bold {
     font-weight:bold;
 }
+.font-weight-regular {
+    font-weight:lighter;
+}
 
 .font-xsm{
     font-size:12px;
@@ -93,6 +96,9 @@ body {
 }
 .font-lg {
     font-size: 20px;
+}
+.font-xl {
+    font-size: 32px;
 }
 .font-huge {
     font-size: 46px;
@@ -145,6 +151,12 @@ body {
     height: 6px;
     background-image: linear-gradient(to right, #2ff353, #d9ff00, #ff0000);
     border: none;
+}
+.color-line-score {
+    height: 6px;
+    background-image: linear-gradient(to right, #4adc78, #dcd74a, #dc4a67);
+    border: none;
+    border-radius: 5px;
 }
 .common-divider {
     height: 1px;
@@ -322,6 +334,7 @@ body {
     width: 200;
 
 
+
 }
 img.game-card {
     height: 250px;
@@ -366,7 +379,6 @@ img.game-card {
 .score-lg {
     width: 60px; 
     height: 60px;
-    background-color: #dcd74a; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,6 +386,15 @@ img.game-card {
     color: #2e2e2e;
     font-weight: bolder;
     font-size: 32px;
+}
+.score-color-bad {
+    background-color: #dc4a67;
+}
+.score-color-mid {
+    background-color: #dcd74a;
+}
+.score-color-good {
+    background-color: #4adc78;
 }
 .score-lg-empty {
     width: 60px; 
@@ -456,4 +477,29 @@ img.game-card {
 }
 .score-color-green:hover {
     background-color: #4adc78ac;
+}
+
+img.review {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.modal-custom-width {
+    max-width: 530px; /* Adjust as per your preference */
+  }
+
+.review-form {
+    background-color:#1a141e;
+    border: 1px solid #ff6cab;
+    color: #ffffff;
+}
+.review-form::placeholder {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+.review-form:focus {
+    background-color:#251e29;
+    border: 1px solid #ff6cab;
+    color: #ffffff;
 }

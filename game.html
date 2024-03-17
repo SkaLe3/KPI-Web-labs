@@ -58,57 +58,146 @@
         </div>
     </nav>
 
-<!-- Main Content -->
-<section>
-<div class="container-md ssc-bg-primary game-container">
-    <div class="row">
-        <div class="col-8">
-            <img src="assets/bf2042.avif" class="game-media img-fluid">
-        </div>
-        <div class="col-4 py-3">
-            <h3 class="text-white font-weight-bold">Battlefield 2042</h3>
-            <p class="text-white font-weight-bold" style="display: inline;">Released On:</p>
-            <p class="text-white" style="display: inline;">NOV 19, 2021</p>
-            <hr class="default-divider">
+    <!-- Main Content -->
+    <section>
+        <div class="container-md ssc-bg-primary game-container">
             <div class="row">
-                <div class="col-9">
-                    <p class=" text-white my-0 spacing-wide">USER RATING</p>
-                    <p class="font-weight-bold text-white my-0">Mixed or Average</p>
-                    <a href="#reviews" class="text-decoration-underline text-white">Based on 421 User Ratings</a>
+                <div class="col-8">
+                    <img src="assets/bf2042.avif" class="game-media img-fluid">
                 </div>
-                <div class="col-3 d-flex justify-content-end">
-                    <div class="score-lg">68</div>
-                </div>
-            </div>
-            <hr class="color-divider mt-1">
-            <div class="row">
-                <div class="col-9">
-                    <p class=" text-white my-0 spacing-wide">MY RATING</p>
-                    <p class="font-weight-bold text-white my-2">Hover and click to hive a rating</p>
-                </div>
-                <div class="col-3 d-flex justify-content-end">
-                    <div class="score-lg-empty"></div>
-                </div>
-            </div>
-            <div class="row px-2-5 mt-2">
-                <div class="btn score-selector-first score-color-red me-1"></div>
-                <div class="btn score-selector score-color-red me-1"></div>
-                <div class="btn score-selector score-color-red me-1"></div>
-                <div class="btn score-selector score-color-red me-1"></div>
-                <div class="btn score-selector score-color-yellow me-1"></div>
-                <div class="btn score-selector score-color-yellow me-1"></div>
-                <div class="btn score-selector score-color-yellow me-1"></div>
-                <div class="btn score-selector score-color-green me-1"></div>
-                <div class="btn score-selector score-color-green me-1"></div>
-                <div class="btn score-selector-last score-color-green me-1"></div>
-            </div>
-            
-            <button type="button" class="btn ssc-btn-outline-accent w-100 font-heading mt-3">Add My Review</button>
-        </div>
-    </div>
+                <div class="col-4 py-3">
+                    <h3 class="text-white font-weight-bold mb-4">Battlefield 2042</h3>
+                    <p class="text-white font-weight-bold" style="display: inline;">Released On:</p>
+                    <p class="text-white" style="display: inline;">NOV 19, 2021</p>
+                    <hr class="default-divider">
+                    <!-- Critics Rating-->
+                    <div class="row">
+                        <div class="col-9">
+                            <p class=" text-white my-0 spacing-wide">METARATING</p>
+                            <p class="font-weight-bold text-white my-0">Mixed or Average</p>
+                            <a href="#reviews" class="text-decoration-underline text-white">Based on 52 Critics
+                                Ratings</a>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <div class="score-lg score-color-good">72</div>
+                        </div>
+                    </div>
+                    <div class="color-line-score mt-2 mb-4"></div>
+                    <!-- User Rating-->
+                    <div class="row">
+                        <div class="col-9">
+                            <p class=" text-white my-0 spacing-wide">USER RATING</p>
+                            <p class="font-weight-bold text-white my-0">Mixed or Average</p>
+                            <a href="#reviews" class="text-decoration-underline text-white">Based on 421 User
+                                Ratings</a>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <div class="score-lg score-color-mid">68</div>
+                        </div>
+                    </div>
+                    <div class="color-line-score mt-2 mb-4"></div>
+                    <!-- Set Rating -->
+                    <div class="row">
+                        <div class="col-9">
+                            <p class=" text-white my-0 spacing-wide">MY RATING</p>
+                            <p class="font-weight-bold text-white my-2">Hover and click to give a rating</p>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <div class="score-lg-empty"></div>
+                        </div>
+                    </div>
 
-</div>
-</section>
+                    <div class="row px-2-5 mt-2">
+                        <div class="btn score-selector-first score-color-red me-1"></div>
+                        <div class="btn score-selector score-color-red me-1"></div>
+                        <div class="btn score-selector score-color-red me-1"></div>
+                        <div class="btn score-selector score-color-red me-1"></div>
+                        <div class="btn score-selector score-color-yellow me-1"></div>
+                        <div class="btn score-selector score-color-yellow me-1"></div>
+                        <div class="btn score-selector score-color-yellow me-1"></div>
+                        <div class="btn score-selector score-color-green me-1"></div>
+                        <div class="btn score-selector score-color-green me-1"></div>
+                        <div class="btn score-selector-last score-color-green me-1"></div>
+                    </div>
+                    <!------------------->
+
+                    <button type="button" class="btn ssc-btn-outline-accent w-100 font-heading mt-3" data-toggle="modal"
+                        data-target="#addReviewModal">Add My Review</button>
+
+                    <div class="modal fade" id="addReviewModal" tabindex="-1" role="dialog"
+                        aria-labelledby="addReviewModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-custom-width" role="document">
+                            <div class="modal-content ssc-bg-primary">
+                                <div class="modal-header d-flex justify-content-between border-0 pb-0">
+                                    <h4 class="modal-title font-weight-bold text-white" id="addReviewModalLabel">Add My
+                                        Review</h4>
+                                    <button type="button" class="btn close ml-auto border-0 font-xl text-white"
+                                        data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body pt-2">
+                                    <!-- Modal content -->
+                                    <div class="row">
+                                        <div class="col-auto pe-0">
+                                            <img src="assets/battlefield.jpg" class="review">
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="font-weight-bold text-white">Battlefield 2042</p>
+                                        </div>
+                                    </div>
+                                    <hr class="common-divider">
+                                    <!-- Set Rating -->
+                                    <div class="row">
+                                        <div class="col-2 pe-0">
+                                            <div class="score-lg-empty"></div>
+                                        </div>
+                                        <div class="col-10 ps-0">
+                                            <p class=" text-white my-0 spacing-wide">MY RATING</p>
+                                            <p class="font-weight-bold text-white my-2">Hover and click to hive a rating
+                                            </p>
+                                            <div class="row px-2-5 mt-2">
+                                                <div class="btn score-selector-first score-color-red me-1"></div>
+                                                <div class="btn score-selector score-color-red me-1"></div>
+                                                <div class="btn score-selector score-color-red me-1"></div>
+                                                <div class="btn score-selector score-color-red me-1"></div>
+                                                <div class="btn score-selector score-color-yellow me-1"></div>
+                                                <div class="btn score-selector score-color-yellow me-1"></div>
+                                                <div class="btn score-selector score-color-yellow me-1"></div>
+                                                <div class="btn score-selector score-color-green me-1"></div>
+                                                <div class="btn score-selector score-color-green me-1"></div>
+                                                <div class="btn score-selector-last score-color-green me-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!------------------->
+                                    <hr class="common-divider">
+                                    <div class="form-group">
+                                        <label class="text-white mb-2" for="review">Write a review for
+                                            <strong><em>Battlefield 2042</em></strong></label>
+                                        <textarea class="form-control review-form font-special font-sm" id="review" name="review" rows="7"
+                                           placeholder="Minimum 75 characters" required></textarea>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer  d-flex  border-0 pt-0 px-3">
+                                    <div class="col-6 mx-auto pe-2">
+                                        <button type="button" class="btn font-heading ssc-btn-outline-accent w-100 "
+                                            data-dismiss="modal">Cancel</button>
+                                    </div>
+                                    <div class="col-6 mx-auto ps-2">
+                                        <button type="submit" form="reviewForm"
+                                            class="btn font-heading ssc-btn-accent w-100 ">post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="ssc-bg-primary text-white ">
         <hr class="color-divider mt-4">
@@ -145,9 +234,11 @@
             <div class=" font-xsm d-md-none">&copy; 2024 SkaLeSync Corporation. All rights reserved.</div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
