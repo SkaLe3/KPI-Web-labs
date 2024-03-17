@@ -165,7 +165,7 @@ body {
 }
 .default-divider {
     height: 1px;
-    background-color: #878787;
+    background-color: #b9b9b9;
     border: none;
 }
 
@@ -387,6 +387,17 @@ img.game-card {
     font-weight: bolder;
     font-size: 32px;
 }
+.score-md {
+    width: 46px; 
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #2e2e2e;
+    font-weight: bolder;
+    font-size: 24px;
+}
 .score-color-bad {
     background-color: #dc4a67;
 }
@@ -428,7 +439,7 @@ img.game-card {
 }
 
 .score-selector {
-    width:38px;
+    width:auto;
     height: 10px;
     display: flex;
     border: none;
@@ -436,7 +447,7 @@ img.game-card {
 }
 
 .score-selector-first {
-    width:38px;
+    width:auto;
     height: 10px;
     display: flex;
     border: none;
@@ -445,7 +456,7 @@ img.game-card {
     border-bottom-left-radius: 5px;
 }
 .score-selector-last {
-    width:38px;
+    width:auto;
     height: 10px;
     display: flex;
     border: none;
@@ -502,4 +513,27 @@ img.review {
     background-color:#251e29;
     border: 1px solid #ff6cab;
     color: #ffffff;
+}
+
+.decoration-none {
+    text-decoration: none !important
+}
+
+.review-post {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #1a141eba;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    color:#ffffff
+}
+.review-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

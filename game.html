@@ -62,10 +62,11 @@
     <section>
         <div class="container-md ssc-bg-primary game-container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-md-8 pe-0">
                     <img src="assets/bf2042.avif" class="game-media img-fluid">
                 </div>
-                <div class="col-4 py-3">
+                <div class="col-md-4 py-3 ">
+                    <!-- Title -->
                     <h3 class="text-white font-weight-bold mb-4">Battlefield 2042</h3>
                     <p class="text-white font-weight-bold" style="display: inline;">Released On:</p>
                     <p class="text-white" style="display: inline;">NOV 19, 2021</p>
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                     <div class="color-line-score mt-2 mb-4"></div>
-                    <!-- Set Rating -->
+                    <!-- My Rating -->
                     <div class="row">
                         <div class="col-9">
                             <p class=" text-white my-0 spacing-wide">MY RATING</p>
@@ -107,28 +108,32 @@
                         </div>
                     </div>
 
-                    <div class="row px-2-5 mt-2">
-                        <div class="btn score-selector-first score-color-red me-1"></div>
-                        <div class="btn score-selector score-color-red me-1"></div>
-                        <div class="btn score-selector score-color-red me-1"></div>
-                        <div class="btn score-selector score-color-red me-1"></div>
-                        <div class="btn score-selector score-color-yellow me-1"></div>
-                        <div class="btn score-selector score-color-yellow me-1"></div>
-                        <div class="btn score-selector score-color-yellow me-1"></div>
-                        <div class="btn score-selector score-color-green me-1"></div>
-                        <div class="btn score-selector score-color-green me-1"></div>
-                        <div class="btn score-selector-last score-color-green me-1"></div>
+                    <div class="row px-0 mt-2">
+                        <div class="d-flex flex-wrap">
+                        <div class="btn score-selector-first score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                        <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                        <div class="btn score-selector-last score-color-green me-1 flex-fill"></div>
+                        </div>
                     </div>
                     <!------------------->
 
                     <button type="button" class="btn ssc-btn-outline-accent w-100 font-heading mt-3" data-toggle="modal"
                         data-target="#addReviewModal">Add My Review</button>
 
+                    <!-- Modal to add review -->
                     <div class="modal fade" id="addReviewModal" tabindex="-1" role="dialog"
                         aria-labelledby="addReviewModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-custom-width" role="document">
                             <div class="modal-content ssc-bg-primary">
                                 <div class="modal-header d-flex justify-content-between border-0 pb-0">
+                                    <!-- Add review button -->
                                     <h4 class="modal-title font-weight-bold text-white" id="addReviewModalLabel">Add My
                                         Review</h4>
                                     <button type="button" class="btn close ml-auto border-0 font-xl text-white"
@@ -156,17 +161,19 @@
                                             <p class=" text-white my-0 spacing-wide">MY RATING</p>
                                             <p class="font-weight-bold text-white my-2">Hover and click to hive a rating
                                             </p>
-                                            <div class="row px-2-5 mt-2">
-                                                <div class="btn score-selector-first score-color-red me-1"></div>
-                                                <div class="btn score-selector score-color-red me-1"></div>
-                                                <div class="btn score-selector score-color-red me-1"></div>
-                                                <div class="btn score-selector score-color-red me-1"></div>
-                                                <div class="btn score-selector score-color-yellow me-1"></div>
-                                                <div class="btn score-selector score-color-yellow me-1"></div>
-                                                <div class="btn score-selector score-color-yellow me-1"></div>
-                                                <div class="btn score-selector score-color-green me-1"></div>
-                                                <div class="btn score-selector score-color-green me-1"></div>
-                                                <div class="btn score-selector-last score-color-green me-1"></div>
+                                            <div class="row px-0 mt-2">
+                                                <div class="d-flex flex-wrap">
+                                                <div class="btn score-selector-first score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-red me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-yellow me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                                                <div class="btn score-selector score-color-green me-1 flex-fill"></div>
+                                                <div class="btn score-selector-last score-color-green me-1 flex-fill"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -175,8 +182,9 @@
                                     <div class="form-group">
                                         <label class="text-white mb-2" for="review">Write a review for
                                             <strong><em>Battlefield 2042</em></strong></label>
-                                        <textarea class="form-control review-form font-special font-sm" id="review" name="review" rows="7"
-                                           placeholder="Minimum 75 characters" required></textarea>
+                                        <textarea class="form-control review-form font-special font-sm" id="review"
+                                            name="review" rows="7" placeholder="Minimum 75 characters"
+                                            required></textarea>
                                     </div>
                                     </form>
                                 </div>
@@ -195,7 +203,165 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-5">
+                <!-- Critics review -->
+                <div class="col-6 ps-4">
+                    <h5 class="font-weight-bold text-white">Critic Reviews</h5>
+                    <hr class="default-divider">
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">100</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Battlefield 2042 brings the sandbox back to the
+                            series in bold and controversial ways.
+                            The new Specialist system might seem like sacrilege at first, but it opens up gameplay
+                            opportunities that wewn't
+                            possible in previos titles. The massive, well-designed maps offer plenty of room
+                            for experimentation and emergent stories, and the modes are a blast.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">Critic Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">NOV 11, 2021</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
 
+                </div>
+                <!-- Users review -->
+                <div class="col-6">
+                    <h5 class="font-weight-bold text-white">User Reviews</h5>
+                    <hr class="default-divider">
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">User Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">Sep 02, 2023</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">User Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">Sep 02, 2023</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="review-post">
+                        <div class="row align-items-center">
+                            <div class="col-auto pe-0">
+                                <div class="score-md score-color-good">99</div>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="font-weight-bold my-0">User Name</h5>
+                            </div>
+                            <div class="col-auto ms-auto">
+                                <p class="font-xsm my-0">Sep 02, 2023</p>
+                            </div>
+                        </div>
+                        <p class=" mt-3 overflow-hidden review-text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Footer -->
